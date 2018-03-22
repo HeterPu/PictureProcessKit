@@ -15,12 +15,15 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
 
 @interface UIImage (PPK_Help)
 
+
+#pragma mark -- PICTURE CREATE
+
 /**
  更新图片位置
  @param chosenImage 选择的图片
  @return 返回新的图片
  */
-+ (UIImage *)updateImageOrientation:(UIImage *)chosenImage;
++ (UIImage *)ppk_updateImageOrientation:(UIImage *)chosenImage;
     
     
 /**
@@ -29,7 +32,7 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @param size 尺寸
  @return 返回新图片
  */
-+ (UIImage*)shrinkImage:(UIImage*)original size:(CGSize)size;
++ (UIImage*)ppk_shrinkImage:(UIImage*)original size:(CGSize)size;
 
 
 /**
@@ -37,7 +40,7 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @param name 图片名字
  @return 返回新图片
  */
-+ (UIImage *)imageNoCache:(NSString *)name;
++ (UIImage *)ppk_imageNoCache:(NSString *)name;
     
     
 /**
@@ -46,7 +49,7 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @param edgeInsets 边界距离
  @return 返回图片
  */
-+ (UIImage *)stretchableImage:(UIImage *)img edgeInsets:(UIEdgeInsets)edgeInsets;
++ (UIImage *)ppk_stretchableImage:(UIImage *)img edgeInsets:(UIEdgeInsets)edgeInsets;
     
 
 /**
@@ -57,7 +60,7 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @param imageName 图片名称
  @return 返回图片
  */
-+ (UIImage *)imageFromBundle:(NSString *)bundleName path:(NSString *)path imageName:(NSString *)imageName;
++ (UIImage *)ppk_imageFromBundle:(NSString *)bundleName path:(NSString *)path imageName:(NSString *)imageName;
     
 
 /**
@@ -65,7 +68,7 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @param color 颜色值
  @return 返回图片
  */
-+ (UIImage*)imageWithColor:(UIColor*)color;
++ (UIImage*)ppk_imageWithColor:(UIColor*)color;
     
 
 /**
@@ -74,59 +77,7 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @param size 尺寸
  @return 返回图片
  */
-+ (UIImage*)imageWithColor:(UIColor*)color size:(CGSize)size;
-    
-    
-/**
- 根据view来生成图片
- @param view 要生成图片的view
- @param rect view的尺寸
- @return 返回图片
- */
-+ (UIImage *)imageWithView:(UIView *)view rect:(CGRect)rect;
-    
-
-/**
- 按照window来生成图片
- @param rect 裁剪的尺寸
- @return 返回图片
- */
-+ (UIImage *)imageWithWindowRect:(CGRect)rect;
-    
-
-/**
- 缩放图片
- @param image 原始图片
- @param newSize 新的尺寸
- @return 返回图片
- */
-+ (UIImage *)imageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize;
-    
-
-/**
-缩放图片
-@param image 原始图片
-@param newSize 新的尺寸
-@return 返回图片
-*/
-+ (UIImage *)imageWithImageCenterSimple:(UIImage*)image scaledToSize:(CGSize)newSize;
-
-/**
-缩放图片
-@param image 原始图片
-@param newSize 新的尺寸
-@return 返回图片
-*/
-+ (UIImage *) croppedImageCenterSimple:(UIImage*)image scaledToSize:(CGSize)newSize;
-    
-
-/**
-缩放图片
-@param image 原始图片
-@param sideMax 新的尺寸
-@return 返回图片
-*/
-+ (CGSize)scaleImage:(UIImage *)image sideMax:(float)sideMax;
++ (UIImage*)ppk_imageWithColor:(UIColor*)color size:(CGSize)size;
 
 
 /**
@@ -136,7 +87,60 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @param point 绘制的点
  @return 返回图片
  */
-+ (UIImage*) drawText:(NSString*)text inImage:(UIImage*)image atPoint:(CGPoint)point;
++ (UIImage*)ppk_drawText:(NSString*)text inImage:(UIImage*)image atPoint:(CGPoint)point;
+
+
+#pragma mark -- PICTURE CROP
+
+
+/**
+ 根据view来生成图片
+ @param view 要生成图片的view
+ @param rect view的尺寸
+ @return 返回图片
+ */
++ (UIImage *)ppk_imageWithView:(UIView *)view rect:(CGRect)rect;
+
+
+/**
+ 按照window来生成图片
+ @param rect 裁剪的尺寸
+ @return 返回图片
+ */
++ (UIImage *)ppk_imageWithWindowRect:(CGRect)rect;
+    
+    
+
+/**
+缩放图片
+@param image 原始图片
+@param sideMax 新的尺寸
+@return 返回图片
+*/
++ (CGSize)ppk_scaleImage:(UIImage *)image sideMax:(float)sideMax;
+
+
+
+
+/**
+ *从图片中按指定的位置大小截取图片的一部分
+ * UIImage image 原始的图片
+ * CGRect rect 要截取的区域
+ */
++(UIImage *)ppk_imageCropFromImage:(UIImage *)image inRect:(CGRect)rect;
+
+
+
+/**
+ *从图片中按指定的位置的相对位置来截取
+ * UIImage image 原始的图片
+ * CGRect rect 要截取的区域(0.5,0.5,0.5,0.5) rightbottom squard.
+ */
++(UIImage *)ppk_imageCropFromImage:(UIImage *)image inRatioRect:(CGRect)rect;
+
+
+
+#pragma mark -- PICTURE COMPSITE
 
 
 /**
@@ -147,7 +151,8 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @return 返回的图片
  */
 +(UIImage *)ppk_imageAddImage:(UIImage *)addImage toImage:(UIImage *)backImage position:(PPK_Image_Position)position;
-    
+
+
 
 /**
 图片合成
@@ -157,4 +162,5 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
  @return 返回的图片
  */
 +(UIImage *)ppk_imageAddImage:(UIImage *)addImage toImage:(UIImage *)backImage positionXYRatio:(CGPoint)ratio;
+
 @end

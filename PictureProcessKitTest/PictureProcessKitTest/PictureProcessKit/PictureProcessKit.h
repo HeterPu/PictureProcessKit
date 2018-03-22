@@ -9,7 +9,8 @@
 #ifndef PictureProcessKit_h
 #define PictureProcessKit_h
 
-#import ""
-
+#import "CubeMap_PK.h"
+#import "UIImage+PPK_Help.h"
+#import "FaceDetection_PPK.h"
 
 #endif /* PictureProcessKit_h */

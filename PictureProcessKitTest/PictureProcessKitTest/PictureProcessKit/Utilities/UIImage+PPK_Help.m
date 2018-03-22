@@ -6,9 +6,11 @@
 
 #import "UIImage+PPK_Help.h"
 
+#define K_ppk_image_default_size  CGSizeMake(100, 100)
+
 @implementation UIImage (PPK_Help)
 
-+ (UIImage *)updateImageOrientation:(UIImage *)chosenImage
++ (UIImage *)ppk_updateImageOrientation:(UIImage *)chosenImage
 {
     if (chosenImage) {
         // No-op if the orientation is already correct
@@ -89,7 +91,7 @@
     return nil;
 }
 
-+ (UIImage*)shrinkImage:(UIImage*)original size:(CGSize)size {
++ (UIImage*)ppk_shrinkImage:(UIImage*)original size:(CGSize)size {
     CGFloat scale = [UIScreen mainScreen].scale;
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     
@@ -108,13 +110,13 @@
 }
 
 #pragma mark - 创建mainBundle目录下不带缓存的图片
-+ (UIImage *)imageNoCache:(NSString *)name
++ (UIImage *)ppk_imageNoCache:(NSString *)name
 {
     return [UIImage imageWithContentsOfFile:[NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] bundlePath], name]];
 }
 
 #pragma mark - 可拉伸的图片
-+ (UIImage *)stretchableImage:(UIImage *)img edgeInsets:(UIEdgeInsets)edgeInsets{
++ (UIImage *)ppk_stretchableImage:(UIImage *)img edgeInsets:(UIEdgeInsets)edgeInsets{
     edgeInsets.top < 1 ? edgeInsets.top = 12 : 0;
     edgeInsets.left  < 1 ? edgeInsets.left = 12 : 0;
     edgeInsets.bottom < 1 ? edgeInsets.bottom = 12 : 0;
@@ -126,7 +128,7 @@
 #endif
 }
 
-+ (UIImage *)imageFromBundle:(NSString *)bundleName path:(NSString *)path imageName:(NSString *)imageName
++ (UIImage *)ppk_imageFromBundle:(NSString *)bundleName path:(NSString *)path imageName:(NSString *)imageName
 {
     NSMutableString *fullName = [[NSMutableString alloc] initWithString:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:bundleName]];
     if (path && path.length > 0)
@@ -144,9 +146,9 @@
 }
 
 #pragma mark - UIColor转UIImage
-+ (UIImage*)imageWithColor:(UIColor*)color
++ (UIImage*)ppk_imageWithColor:(UIColor*)color
 {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 8.0f, 8.0f);
+    CGRect rect = CGRectMake(0.0f, 0.0f, K_ppk_image_default_size.width, K_ppk_image_default_size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);
@@ -156,8 +158,40 @@
     return theImage;
 }
 
+
+/**
+ *从图片中按指定的位置大小截取图片的一部分
+ * UIImage image 原始的图片
+ * CGRect rect 要截取的区域
+ */
++(UIImage *)ppk_imageCropFromImage:(UIImage *)image inRect:(CGRect)rect{
+    
+    //将UIImage转换成CGImageRef
+    CGImageRef sourceImageRef = [image CGImage];
+    
+    //按照给定的矩形区域进行剪裁
+    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, rect);
+    
+    //将CGImageRef转换成UIImage
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef];
+    
+    //返回剪裁后的图片
+    return newImage;
+}
+
+
++(UIImage *)ppk_imageCropFromImage:(UIImage *)image inRatioRect:(CGRect)rect{
+    CGFloat  originX = rect.origin.x * image.size.width;
+    CGFloat  originY = rect.origin.y * image.size.height;
+    CGFloat  width = rect.size.width * image.size.width;
+    CGFloat  height = rect.size.height * image.size.height;
+    CGFloat scale = image.scale;
+    return [UIImage ppk_imageCropFromImage:image inRect:CGRectMake(originX * scale, originY * scale, width * scale, height *scale)];
+}
+
+
 #pragma mark - UIColor转UIImage
-+ (UIImage*)imageWithColor:(UIColor*)color size:(CGSize)size
++ (UIImage*)ppk_imageWithColor:(UIColor*)color size:(CGSize)size
 {
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
@@ -169,7 +203,7 @@
     return theImage;
 }
 
-+ (UIImage *)imageWithView:(UIView *)view rect:(CGRect)rect
++ (UIImage *)ppk_imageWithView:(UIView *)view rect:(CGRect)rect
 {
     
     UIGraphicsBeginImageContextWithOptions(view.frame.size, view.opaque, 0.0);
@@ -185,7 +219,7 @@
     return img;
 }
 
-+ (UIImage *)imageWithWindowRect:(CGRect)rect
++ (UIImage *)ppk_imageWithWindowRect:(CGRect)rect
 {
     UIWindow *window = [UIApplication sharedApplication].delegate.window;
     NSLog(@"%@", NSStringFromCGSize(window.bounds.size));
@@ -206,66 +240,12 @@
     return img;
 }
 
-#pragma mark - 将图片大小转换成新尺寸
-+ (UIImage *)imageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize
-{
-    UIGraphicsBeginImageContext(newSize);//根据当前大小创建一个基于位图图形的环境
-    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];//根据新的尺寸画出传过来的图片
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();//从当前环境当中得到重绘的图片
-    UIGraphicsEndImageContext();//关闭当前环境
-    return newImage;
-}
 
 
 
 #pragma mark - 将图片大小转换成新尺寸
-+ (UIImage *)imageWithImageCenterSimple:(UIImage*)image scaledToSize:(CGSize)newSize
-{
-    UIGraphicsBeginImageContext(newSize);//根据当前大小创建一个基于位图图形的环境
-    [image drawInRect:CGRectMake((image.size.width - newSize.width)/2.0,
-                                 (image.size.height - newSize.height)/2.0,
-                                 newSize.width*2,
-                                 newSize.height*2)];//根据新的尺寸画出传过来的图片
-    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();//从当前环境当中得到重绘的图片
-    UIGraphicsEndImageContext();//关闭当前环境
-    return newImage;
-}
 
-
-+ (UIImage *) croppedImageCenterSimple:(UIImage*)image scaledToSize:(CGSize)newSize
-{
-    CGSize size = CGSizeZero;
-    
-    if (newSize.width >= newSize.height) {
-        size.width = image.size.width;
-        size.height = size.width * newSize.height/newSize.width;
-    }
-    
-    if (newSize.height >= newSize.width) {
-        size.height = image.size.height;
-        size.width = size.height * newSize.width/newSize.height;
-    }
-    
-    
-    
-    CGRect cropRect = CGRectMake((image.size.width - size.width)/2.0,
-                                 (image.size.height - size.height)/2.0,
-                                 size.width,
-                                 size.height);
-    
-//    NSLog(@"---------- cropRect: %@", NSStringFromCGRect(cropRect));
-//    NSLog(@"--- self.photo.size: %@", NSStringFromCGSize(self.photo.size));
-    
-    CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], cropRect);
-    UIImage *result = [UIImage imageWithCGImage:imageRef];
-    CGImageRelease(imageRef);
-    
-    NSLog(@"------- result.size: %@", NSStringFromCGSize(result.size));
-    
-    return result;
-}
-
-+ (CGSize)scaleImage:(UIImage *)image sideMax:(float)sideMax
++ (CGSize)ppk_scaleImage:(UIImage *)image sideMax:(float)sideMax
 {
     if (!image)
         return CGSizeZero;
@@ -284,7 +264,7 @@
 }
 
 // Add text to UIImage
-+ (UIImage*) drawText:(NSString*) text
++ (UIImage*) ppk_drawText:(NSString*) text
              inImage:(UIImage*)  image
              atPoint:(CGPoint)   point
 {

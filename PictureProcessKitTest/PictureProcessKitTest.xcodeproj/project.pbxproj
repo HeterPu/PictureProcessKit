@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB57A725206391E1000F02CE /* BaseTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB57A723206391E0000F02CE /* BaseTableCell.m */; };
+		DB57A728206391FD000F02CE /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB57A727206391FC000F02CE /* BaseTableViewCell.m */; };
+		DB57A72F20639D22000F02CE /* PictureCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB57A72D20639D22000F02CE /* PictureCreateViewController.m */; };
+		DB57A73020639D22000F02CE /* PictureCreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB57A72E20639D22000F02CE /* PictureCreateViewController.xib */; };
+		DB57A7342063B67E000F02CE /* PictureComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = DB57A7322063B67D000F02CE /* PictureComposition.m */; };
+		DB57A7352063B67E000F02CE /* PictureComposition.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB57A7332063B67D000F02CE /* PictureComposition.xib */; };
 		DB6D0F2520626A3C007872B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D0F2420626A3C007872B0 /* AppDelegate.m */; };
 		DB6D0F2B20626A3D007872B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6D0F2920626A3D007872B0 /* Main.storyboard */; };
 		DB6D0F2D20626A3D007872B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6D0F2C20626A3D007872B0 /* Assets.xcassets */; };
@@ -42,6 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB57A723206391E0000F02CE /* BaseTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableCell.m; sourceTree = "<group>"; };
+		DB57A724206391E0000F02CE /* BaseTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableCell.h; sourceTree = "<group>"; };
+		DB57A726206391FC000F02CE /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		DB57A727206391FC000F02CE /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		DB57A72C20639D22000F02CE /* PictureCreateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureCreateViewController.h; sourceTree = "<group>"; };
+		DB57A72D20639D22000F02CE /* PictureCreateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureCreateViewController.m; sourceTree = "<group>"; };
+		DB57A72E20639D22000F02CE /* PictureCreateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCreateViewController.xib; sourceTree = "<group>"; };
+		DB57A7312063B67D000F02CE /* PictureComposition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureComposition.h; sourceTree = "<group>"; };
+		DB57A7322063B67D000F02CE /* PictureComposition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureComposition.m; sourceTree = "<group>"; };
+		DB57A7332063B67D000F02CE /* PictureComposition.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureComposition.xib; sourceTree = "<group>"; };
 		DB6D0F2020626A3C007872B0 /* PictureProcessKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureProcessKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6D0F2320626A3C007872B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB6D0F2420626A3C007872B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,10 +146,20 @@
 				DB6D0F2620626A3C007872B0 /* ViewController.h */,
 				DB6D0F8620627C02007872B0 /* ViewController.m */,
 				DB6D0F2920626A3D007872B0 /* Main.storyboard */,
+				DB57A724206391E0000F02CE /* BaseTableCell.h */,
+				DB57A723206391E0000F02CE /* BaseTableCell.m */,
+				DB57A726206391FC000F02CE /* BaseTableViewCell.h */,
+				DB57A727206391FC000F02CE /* BaseTableViewCell.m */,
 				DB6D0F2C20626A3D007872B0 /* Assets.xcassets */,
 				DB6D0F2E20626A3D007872B0 /* LaunchScreen.storyboard */,
 				DB6D0F3120626A3D007872B0 /* Info.plist */,
 				DB6D0F3220626A3D007872B0 /* main.m */,
+				DB57A72C20639D22000F02CE /* PictureCreateViewController.h */,
+				DB57A72D20639D22000F02CE /* PictureCreateViewController.m */,
+				DB57A72E20639D22000F02CE /* PictureCreateViewController.xib */,
+				DB57A7312063B67D000F02CE /* PictureComposition.h */,
+				DB57A7322063B67D000F02CE /* PictureComposition.m */,
+				DB57A7332063B67D000F02CE /* PictureComposition.xib */,
 			);
 			path = PictureProcessKitTest;
 			sourceTree = "<group>";
@@ -327,7 +353,9 @@
 			files = (
 				DB6D0F3020626A3D007872B0 /* LaunchScreen.storyboard in Resources */,
 				DB6D0F2D20626A3D007872B0 /* Assets.xcassets in Resources */,
+				DB57A7352063B67E000F02CE /* PictureComposition.xib in Resources */,
 				DB6D0F2B20626A3D007872B0 /* Main.storyboard in Resources */,
+				DB57A73020639D22000F02CE /* PictureCreateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,15 +380,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB57A728206391FD000F02CE /* BaseTableViewCell.m in Sources */,
 				DB6D0F7720626DF6007872B0 /* ImageUtil_PPK.m in Sources */,
 				DB6D0F8020626E4B007872B0 /* CLBlurBand_PPK.m in Sources */,
 				DBE2581220635FBC00C34650 /* CubeMap_PK.c in Sources */,
 				DB6D0F7320626D4A007872B0 /* FaceDetection_PPK.m in Sources */,
 				DB6D0F8720627C02007872B0 /* ViewController.m in Sources */,
 				DB6D0F3320626A3D007872B0 /* main.m in Sources */,
+				DB57A7342063B67E000F02CE /* PictureComposition.m in Sources */,
+				DB57A725206391E1000F02CE /* BaseTableCell.m in Sources */,
 				DB6D0F2520626A3C007872B0 /* AppDelegate.m in Sources */,
 				DB6D0F7E20626E4B007872B0 /* CLBlurCircle_PPK.m in Sources */,
 				DB6D0F7F20626E4B007872B0 /* CLSpotCircle_PPK.m in Sources */,
+				DB57A72F20639D22000F02CE /* PictureCreateViewController.m in Sources */,
 				DB6D0F7020626CDB007872B0 /* UIImage+PPK_Help.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
