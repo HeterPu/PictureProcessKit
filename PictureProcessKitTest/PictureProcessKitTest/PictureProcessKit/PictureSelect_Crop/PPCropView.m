@@ -328,6 +328,16 @@
             }
             
             UIImage *comPoseImage = [UIImage ppk_imageAddImage:image toImage:imageBack positionXYRatio:ratioR];
+            
+            NSArray *aryPath=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            
+            NSString *strDocPath=[aryPath objectAtIndex:0];
+            NSData *data;
+            if (UIImagePNGRepresentation(comPoseImage) == nil){
+                data = UIImageJPEGRepresentation(comPoseImage, 1);
+            } else {
+                data = UIImagePNGRepresentation(comPoseImage);
+            }
             return comPoseImage;
         }
     }

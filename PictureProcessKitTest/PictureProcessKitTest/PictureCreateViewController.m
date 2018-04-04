@@ -42,7 +42,7 @@
 }
 
 - (IBAction)shrinkI:(id)sender {
-    UIImage *image = [UIImage ppk_shrinkImage:self.sources.image size:CGSizeMake(150, 100)];
+    UIImage *image = [UIImage ppk_image:self.sources.image targetScale:0.5];
     _resultv.image  = image;
 }
 

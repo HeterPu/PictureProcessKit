@@ -19,6 +19,13 @@ typedef NS_ENUM(NSInteger,PPK_Image_Position) {
 #pragma mark -- PICTURE CREATE
 
 /**
+ 指定到缩放比例的图片
+ @param sourceImage 资源图片
+ @param scale 缩放比
+ @return 返回图片
+ */
++(UIImage *)ppk_image:(UIImage *)sourceImage targetScale:(CGFloat)scale;
+/**
  更新图片位置
  @param chosenImage 选择的图片
  @return 返回新的图片
