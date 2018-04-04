@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PictureSelectViewController">
+            <connections>
+                <outlet property="imageV" destination="RAa-dk-3FC" id="3NR-Ar-qPM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSH-5b-rgd">
+                    <rect key="frame" x="104" y="377" width="166" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Wzh-DR-bWx"/>
+                        <constraint firstAttribute="width" constant="166" id="bWV-6Z-qcW"/>
+                    </constraints>
+                    <state key="normal" title="Select"/>
+                    <connections>
+                        <action selector="selectedClick:" destination="-1" eventType="touchUpInside" id="yYy-zu-Lu6"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RAa-dk-3FC">
+                    <rect key="frame" x="35" y="90" width="304" height="195"/>
+                    <color key="backgroundColor" red="1" green="0.41994977680000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="304" id="B2x-Qb-pRl"/>
+                        <constraint firstAttribute="height" constant="195" id="R0C-cZ-WTi"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="NSH-5b-rgd" secondAttribute="bottom" constant="226" id="1wm-nq-JFv"/>
+                <constraint firstItem="RAa-dk-3FC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CEx-E7-0rj"/>
+                <constraint firstItem="NSH-5b-rgd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="E0w-QD-DYg"/>
+                <constraint firstItem="RAa-dk-3FC" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="70" id="q78-iy-bhJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

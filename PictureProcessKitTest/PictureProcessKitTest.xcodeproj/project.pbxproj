@@ -27,6 +27,29 @@
 		DB6D0F7F20626E4B007872B0 /* CLSpotCircle_PPK.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D0F7A20626E4B007872B0 /* CLSpotCircle_PPK.m */; };
 		DB6D0F8020626E4B007872B0 /* CLBlurBand_PPK.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D0F7C20626E4B007872B0 /* CLBlurBand_PPK.m */; };
 		DB6D0F8720627C02007872B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D0F8620627C02007872B0 /* ViewController.m */; };
+		DB74E8C820731B160042CEDE /* PPCropController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8C720731B160042CEDE /* PPCropController.m */; };
+		DB74E8D920731EAF0042CEDE /* PPPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8D320731EAF0042CEDE /* PPPoint.m */; };
+		DB74E8DA20731EAF0042CEDE /* PPPointPath.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8D520731EAF0042CEDE /* PPPointPath.m */; };
+		DB74E8DB20731EAF0042CEDE /* PPCompoundPath.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8D820731EAF0042CEDE /* PPCompoundPath.m */; };
+		DB74E8DF207321FB0042CEDE /* PPCompoundPath_sub.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8DE207321FB0042CEDE /* PPCompoundPath_sub.m */; };
+		DB74E8E22073221B0042CEDE /* PPPoint_sub.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8E12073221B0042CEDE /* PPPoint_sub.m */; };
+		DB74E8E52073222D0042CEDE /* PPPointPath_sub.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8E42073222D0042CEDE /* PPPointPath_sub.m */; };
+		DB74E8FC207327D20042CEDE /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8E7207327D00042CEDE /* MJFoundation.m */; };
+		DB74E8FD207327D20042CEDE /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8E8207327D00042CEDE /* NSObject+MJCoding.m */; };
+		DB74E8FE207327D20042CEDE /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8E9207327D00042CEDE /* MJPropertyKey.m */; };
+		DB74E8FF207327D20042CEDE /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8EB207327D10042CEDE /* NSObject+MJClass.m */; };
+		DB74E900207327D20042CEDE /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8EC207327D10042CEDE /* MJProperty.m */; };
+		DB74E901207327D20042CEDE /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8EE207327D10042CEDE /* NSObject+MJKeyValue.m */; };
+		DB74E902207327D20042CEDE /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8F1207327D10042CEDE /* MJExtensionConst.m */; };
+		DB74E903207327D20042CEDE /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8F3207327D10042CEDE /* NSObject+MJProperty.m */; };
+		DB74E904207327D20042CEDE /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8F6207327D10042CEDE /* NSString+MJExtension.m */; };
+		DB74E905207327D20042CEDE /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E8F9207327D20042CEDE /* MJPropertyType.m */; };
+		DB74E90B20732ED80042CEDE /* PPCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E90920732ED80042CEDE /* PPCropView.m */; };
+		DB74E91720732FEC0042CEDE /* UIView+XL_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E91420732FEC0042CEDE /* UIView+XL_Extension.m */; };
+		DB74E91820732FEC0042CEDE /* XL_ZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E91620732FEC0042CEDE /* XL_ZoomingScrollView.m */; };
+		DB74E91F207355970042CEDE /* PictureSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB74E91D207355970042CEDE /* PictureSelectViewController.m */; };
+		DB74E920207355970042CEDE /* PictureSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB74E91E207355970042CEDE /* PictureSelectViewController.xib */; };
+		DB74E92220735A590042CEDE /* squareMask.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB74E92120735A590042CEDE /* squareMask.txt */; };
 		DBE2581220635FBC00C34650 /* CubeMap_PK.c in Sources */ = {isa = PBXBuildFile; fileRef = DBE2581020635FBC00C34650 /* CubeMap_PK.c */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +110,51 @@
 		DB6D0F7C20626E4B007872B0 /* CLBlurBand_PPK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLBlurBand_PPK.m; sourceTree = "<group>"; };
 		DB6D0F7D20626E4B007872B0 /* CLBlurBand_PPK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLBlurBand_PPK.h; sourceTree = "<group>"; };
 		DB6D0F8620627C02007872B0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB74E8C620731B160042CEDE /* PPCropController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCropController.h; sourceTree = "<group>"; };
+		DB74E8C720731B160042CEDE /* PPCropController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCropController.m; sourceTree = "<group>"; };
+		DB74E8D320731EAF0042CEDE /* PPPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPoint.m; sourceTree = "<group>"; };
+		DB74E8D420731EAF0042CEDE /* PPPointPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPointPath.h; sourceTree = "<group>"; };
+		DB74E8D520731EAF0042CEDE /* PPPointPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPointPath.m; sourceTree = "<group>"; };
+		DB74E8D620731EAF0042CEDE /* PPCompoundPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCompoundPath.h; sourceTree = "<group>"; };
+		DB74E8D720731EAF0042CEDE /* PPPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPoint.h; sourceTree = "<group>"; };
+		DB74E8D820731EAF0042CEDE /* PPCompoundPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCompoundPath.m; sourceTree = "<group>"; };
+		DB74E8DD207321FB0042CEDE /* PPCompoundPath_sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPCompoundPath_sub.h; sourceTree = "<group>"; };
+		DB74E8DE207321FB0042CEDE /* PPCompoundPath_sub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPCompoundPath_sub.m; sourceTree = "<group>"; };
+		DB74E8E02073221B0042CEDE /* PPPoint_sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPoint_sub.h; sourceTree = "<group>"; };
+		DB74E8E12073221B0042CEDE /* PPPoint_sub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPoint_sub.m; sourceTree = "<group>"; };
+		DB74E8E32073222D0042CEDE /* PPPointPath_sub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPPointPath_sub.h; sourceTree = "<group>"; };
+		DB74E8E42073222D0042CEDE /* PPPointPath_sub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPPointPath_sub.m; sourceTree = "<group>"; };
+		DB74E8E7207327D00042CEDE /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		DB74E8E8207327D00042CEDE /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		DB74E8E9207327D00042CEDE /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		DB74E8EA207327D00042CEDE /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		DB74E8EB207327D10042CEDE /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		DB74E8EC207327D10042CEDE /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		DB74E8ED207327D10042CEDE /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		DB74E8EE207327D10042CEDE /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		DB74E8EF207327D10042CEDE /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		DB74E8F0207327D10042CEDE /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		DB74E8F1207327D10042CEDE /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		DB74E8F2207327D10042CEDE /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		DB74E8F3207327D10042CEDE /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		DB74E8F4207327D10042CEDE /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		DB74E8F5207327D10042CEDE /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		DB74E8F6207327D10042CEDE /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		DB74E8F7207327D20042CEDE /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		DB74E8F8207327D20042CEDE /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		DB74E8F9207327D20042CEDE /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		DB74E8FA207327D20042CEDE /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		DB74E8FB207327D20042CEDE /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		DB74E90920732ED80042CEDE /* PPCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCropView.m; sourceTree = "<group>"; };
+		DB74E90A20732ED80042CEDE /* PPCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCropView.h; sourceTree = "<group>"; };
+		DB74E91320732FEC0042CEDE /* UIView+XL_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XL_Extension.h"; sourceTree = "<group>"; };
+		DB74E91420732FEC0042CEDE /* UIView+XL_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XL_Extension.m"; sourceTree = "<group>"; };
+		DB74E91520732FEC0042CEDE /* XL_ZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XL_ZoomingScrollView.h; sourceTree = "<group>"; };
+		DB74E91620732FEC0042CEDE /* XL_ZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XL_ZoomingScrollView.m; sourceTree = "<group>"; };
+		DB74E91C207355970042CEDE /* PictureSelectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureSelectViewController.h; sourceTree = "<group>"; };
+		DB74E91D207355970042CEDE /* PictureSelectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureSelectViewController.m; sourceTree = "<group>"; };
+		DB74E91E207355970042CEDE /* PictureSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureSelectViewController.xib; sourceTree = "<group>"; };
+		DB74E92120735A590042CEDE /* squareMask.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = squareMask.txt; sourceTree = "<group>"; };
 		DBE2581020635FBC00C34650 /* CubeMap_PK.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CubeMap_PK.c; sourceTree = "<group>"; };
 		DBE2581120635FBC00C34650 /* CubeMap_PK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeMap_PK.h; sourceTree = "<group>"; };
 		DBE258132063606700C34650 /* PictureProcessKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureProcessKit.h; sourceTree = "<group>"; };
@@ -140,6 +208,9 @@
 		DB6D0F2220626A3C007872B0 /* PictureProcessKitTest */ = {
 			isa = PBXGroup;
 			children = (
+				DB74E92120735A590042CEDE /* squareMask.txt */,
+				DB74E8E6207327C80042CEDE /* mjextension */,
+				DB74E8DC207321CE0042CEDE /* others */,
 				DB6D0F5520626A76007872B0 /* PictureProcessKit */,
 				DB6D0F2320626A3C007872B0 /* AppDelegate.h */,
 				DB6D0F2420626A3C007872B0 /* AppDelegate.m */,
@@ -160,6 +231,9 @@
 				DB57A7312063B67D000F02CE /* PictureComposition.h */,
 				DB57A7322063B67D000F02CE /* PictureComposition.m */,
 				DB57A7332063B67D000F02CE /* PictureComposition.xib */,
+				DB74E91C207355970042CEDE /* PictureSelectViewController.h */,
+				DB74E91D207355970042CEDE /* PictureSelectViewController.m */,
+				DB74E91E207355970042CEDE /* PictureSelectViewController.xib */,
 			);
 			path = PictureProcessKitTest;
 			sourceTree = "<group>";
@@ -185,6 +259,7 @@
 		DB6D0F5520626A76007872B0 /* PictureProcessKit */ = {
 			isa = PBXGroup;
 			children = (
+				DB74E8C520731ABB0042CEDE /* PictureSelect_Crop */,
 				DB6D0F5620626AB8007872B0 /* CoreImage */,
 				DB6D0F5720626AB8007872B0 /* Utilities */,
 				DBE258132063606700C34650 /* PictureProcessKit.h */,
@@ -243,6 +318,84 @@
 				DB6D0F7220626D4A007872B0 /* FaceDetection_PPK.m */,
 			);
 			path = FaceDetection;
+			sourceTree = "<group>";
+		};
+		DB74E8C520731ABB0042CEDE /* PictureSelect_Crop */ = {
+			isa = PBXGroup;
+			children = (
+				DB74E90C20732F900042CEDE /* PPScrollView */,
+				DB74E8C920731C3B0042CEDE /* CompoundPath */,
+				DB74E8C620731B160042CEDE /* PPCropController.h */,
+				DB74E8C720731B160042CEDE /* PPCropController.m */,
+				DB74E90A20732ED80042CEDE /* PPCropView.h */,
+				DB74E90920732ED80042CEDE /* PPCropView.m */,
+			);
+			path = PictureSelect_Crop;
+			sourceTree = "<group>";
+		};
+		DB74E8C920731C3B0042CEDE /* CompoundPath */ = {
+			isa = PBXGroup;
+			children = (
+				DB74E8D620731EAF0042CEDE /* PPCompoundPath.h */,
+				DB74E8D820731EAF0042CEDE /* PPCompoundPath.m */,
+				DB74E8D720731EAF0042CEDE /* PPPoint.h */,
+				DB74E8D320731EAF0042CEDE /* PPPoint.m */,
+				DB74E8D420731EAF0042CEDE /* PPPointPath.h */,
+				DB74E8D520731EAF0042CEDE /* PPPointPath.m */,
+			);
+			path = CompoundPath;
+			sourceTree = "<group>";
+		};
+		DB74E8DC207321CE0042CEDE /* others */ = {
+			isa = PBXGroup;
+			children = (
+				DB74E8DD207321FB0042CEDE /* PPCompoundPath_sub.h */,
+				DB74E8DE207321FB0042CEDE /* PPCompoundPath_sub.m */,
+				DB74E8E02073221B0042CEDE /* PPPoint_sub.h */,
+				DB74E8E12073221B0042CEDE /* PPPoint_sub.m */,
+				DB74E8E32073222D0042CEDE /* PPPointPath_sub.h */,
+				DB74E8E42073222D0042CEDE /* PPPointPath_sub.m */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		DB74E8E6207327C80042CEDE /* mjextension */ = {
+			isa = PBXGroup;
+			children = (
+				DB74E8F0207327D10042CEDE /* MJExtension.h */,
+				DB74E8EF207327D10042CEDE /* MJExtensionConst.h */,
+				DB74E8F1207327D10042CEDE /* MJExtensionConst.m */,
+				DB74E8F4207327D10042CEDE /* MJFoundation.h */,
+				DB74E8E7207327D00042CEDE /* MJFoundation.m */,
+				DB74E8F8207327D20042CEDE /* MJProperty.h */,
+				DB74E8EC207327D10042CEDE /* MJProperty.m */,
+				DB74E8F5207327D10042CEDE /* MJPropertyKey.h */,
+				DB74E8E9207327D00042CEDE /* MJPropertyKey.m */,
+				DB74E8ED207327D10042CEDE /* MJPropertyType.h */,
+				DB74E8F9207327D20042CEDE /* MJPropertyType.m */,
+				DB74E8FA207327D20042CEDE /* NSObject+MJClass.h */,
+				DB74E8EB207327D10042CEDE /* NSObject+MJClass.m */,
+				DB74E8F7207327D20042CEDE /* NSObject+MJCoding.h */,
+				DB74E8E8207327D00042CEDE /* NSObject+MJCoding.m */,
+				DB74E8F2207327D10042CEDE /* NSObject+MJKeyValue.h */,
+				DB74E8EE207327D10042CEDE /* NSObject+MJKeyValue.m */,
+				DB74E8EA207327D00042CEDE /* NSObject+MJProperty.h */,
+				DB74E8F3207327D10042CEDE /* NSObject+MJProperty.m */,
+				DB74E8FB207327D20042CEDE /* NSString+MJExtension.h */,
+				DB74E8F6207327D10042CEDE /* NSString+MJExtension.m */,
+			);
+			path = mjextension;
+			sourceTree = "<group>";
+		};
+		DB74E90C20732F900042CEDE /* PPScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				DB74E91320732FEC0042CEDE /* UIView+XL_Extension.h */,
+				DB74E91420732FEC0042CEDE /* UIView+XL_Extension.m */,
+				DB74E91520732FEC0042CEDE /* XL_ZoomingScrollView.h */,
+				DB74E91620732FEC0042CEDE /* XL_ZoomingScrollView.m */,
+			);
+			path = PPScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,10 +505,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6D0F3020626A3D007872B0 /* LaunchScreen.storyboard in Resources */,
+				DB74E92220735A590042CEDE /* squareMask.txt in Resources */,
 				DB6D0F2D20626A3D007872B0 /* Assets.xcassets in Resources */,
 				DB57A7352063B67E000F02CE /* PictureComposition.xib in Resources */,
 				DB6D0F2B20626A3D007872B0 /* Main.storyboard in Resources */,
 				DB57A73020639D22000F02CE /* PictureCreateViewController.xib in Resources */,
+				DB74E920207355970042CEDE /* PictureSelectViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,18 +536,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB57A728206391FD000F02CE /* BaseTableViewCell.m in Sources */,
+				DB74E8FC207327D20042CEDE /* MJFoundation.m in Sources */,
+				DB74E905207327D20042CEDE /* MJPropertyType.m in Sources */,
 				DB6D0F7720626DF6007872B0 /* ImageUtil_PPK.m in Sources */,
 				DB6D0F8020626E4B007872B0 /* CLBlurBand_PPK.m in Sources */,
 				DBE2581220635FBC00C34650 /* CubeMap_PK.c in Sources */,
 				DB6D0F7320626D4A007872B0 /* FaceDetection_PPK.m in Sources */,
 				DB6D0F8720627C02007872B0 /* ViewController.m in Sources */,
+				DB74E8FE207327D20042CEDE /* MJPropertyKey.m in Sources */,
+				DB74E904207327D20042CEDE /* NSString+MJExtension.m in Sources */,
+				DB74E8C820731B160042CEDE /* PPCropController.m in Sources */,
+				DB74E91820732FEC0042CEDE /* XL_ZoomingScrollView.m in Sources */,
+				DB74E8DA20731EAF0042CEDE /* PPPointPath.m in Sources */,
 				DB6D0F3320626A3D007872B0 /* main.m in Sources */,
 				DB57A7342063B67E000F02CE /* PictureComposition.m in Sources */,
 				DB57A725206391E1000F02CE /* BaseTableCell.m in Sources */,
+				DB74E91F207355970042CEDE /* PictureSelectViewController.m in Sources */,
+				DB74E901207327D20042CEDE /* NSObject+MJKeyValue.m in Sources */,
 				DB6D0F2520626A3C007872B0 /* AppDelegate.m in Sources */,
 				DB6D0F7E20626E4B007872B0 /* CLBlurCircle_PPK.m in Sources */,
+				DB74E903207327D20042CEDE /* NSObject+MJProperty.m in Sources */,
+				DB74E902207327D20042CEDE /* MJExtensionConst.m in Sources */,
+				DB74E8DB20731EAF0042CEDE /* PPCompoundPath.m in Sources */,
 				DB6D0F7F20626E4B007872B0 /* CLSpotCircle_PPK.m in Sources */,
+				DB74E91720732FEC0042CEDE /* UIView+XL_Extension.m in Sources */,
+				DB74E90B20732ED80042CEDE /* PPCropView.m in Sources */,
+				DB74E900207327D20042CEDE /* MJProperty.m in Sources */,
+				DB74E8E52073222D0042CEDE /* PPPointPath_sub.m in Sources */,
+				DB74E8E22073221B0042CEDE /* PPPoint_sub.m in Sources */,
+				DB74E8FD207327D20042CEDE /* NSObject+MJCoding.m in Sources */,
 				DB57A72F20639D22000F02CE /* PictureCreateViewController.m in Sources */,
+				DB74E8DF207321FB0042CEDE /* PPCompoundPath_sub.m in Sources */,
+				DB74E8D920731EAF0042CEDE /* PPPoint.m in Sources */,
+				DB74E8FF207327D20042CEDE /* NSObject+MJClass.m in Sources */,
 				DB6D0F7020626CDB007872B0 /* UIImage+PPK_Help.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +735,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7LDTLLV6N;
 				INFOPLIST_FILE = PictureProcessKitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PH.PictureProcessKitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -573,6 +750,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7LDTLLV6N;
 				INFOPLIST_FILE = PictureProcessKitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PH.PictureProcessKitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

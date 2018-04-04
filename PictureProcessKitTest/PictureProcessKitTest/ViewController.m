@@ -12,6 +12,7 @@
 #import "BaseTableViewCell.h"
 #import "PictureCreateViewController.h"
 #import "PictureComposition.h"
+#import "PictureSelectViewController.h"
 
 
 @interface ViewController ()
@@ -37,7 +38,7 @@
     if (!_menuArra) {
         _menuArra = @[@[@"Picture Create And Comosite",@"Create",@"Composite"],
                       @[@"CoreImage",@"Matting",@"Face detection"],
-                      @[@"Others"]
+                      @[@"Others",@"ImagePick and Crop"]
                       ];
     }
     return _menuArra;
@@ -87,7 +88,13 @@
             PictureComposition *con = [PictureComposition new];
              [self.navigationController pushViewController:con animated:true];
         }else{
+            
         }
+    }else if(indexPath.section == 2){
+        PictureSelectViewController *con =[PictureSelectViewController new];
+        [self.navigationController pushViewController:con animated:true];
+    }else{
+        
     }
    
 }
