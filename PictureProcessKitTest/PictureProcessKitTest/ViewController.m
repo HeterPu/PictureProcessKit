@@ -13,6 +13,7 @@
 #import "PictureCreateViewController.h"
 #import "PictureComposition.h"
 #import "PictureSelectViewController.h"
+#import "PictureFilterController.h"
 
 
 @interface ViewController ()
@@ -37,7 +38,7 @@
 -(NSArray *)menuArra{
     if (!_menuArra) {
         _menuArra = @[@[@"Picture Create And Comosite",@"Create",@"Composite"],
-                      @[@"CoreImage",@"Matting",@"Face detection"],
+                      @[@"CoreImage",@"ColorMatrix Filter",@"Face detection"],
                       @[@"Others",@"ImagePick and Crop"]
                       ];
     }
@@ -93,8 +94,11 @@
     }else if(indexPath.section == 2){
         PictureSelectViewController *con =[PictureSelectViewController new];
         [self.navigationController pushViewController:con animated:true];
-    }else{
-        
+    }else if(indexPath.section == 1){
+         if (indexPath.row == 0) {
+        PictureFilterController *con =[PictureFilterController new];
+        [self.navigationController pushViewController:con animated:true];
+        }
     }
    
 }

@@ -51,6 +51,9 @@
 		DB74E920207355970042CEDE /* PictureSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB74E91E207355970042CEDE /* PictureSelectViewController.xib */; };
 		DB74E92220735A590042CEDE /* squareMask.txt in Resources */ = {isa = PBXBuildFile; fileRef = DB74E92120735A590042CEDE /* squareMask.txt */; };
 		DBE2581220635FBC00C34650 /* CubeMap_PK.c in Sources */ = {isa = PBXBuildFile; fileRef = DBE2581020635FBC00C34650 /* CubeMap_PK.c */; };
+		DBF7DAA120C8DF15008D2C08 /* CIColorMatrix_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7DAA020C8DF15008D2C08 /* CIColorMatrix_helper.m */; };
+		DBF7DAA520C8E586008D2C08 /* PictureFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7DAA320C8E586008D2C08 /* PictureFilterController.m */; };
+		DBF7DAA620C8E586008D2C08 /* PictureFilterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF7DAA420C8E586008D2C08 /* PictureFilterController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +161,11 @@
 		DBE2581020635FBC00C34650 /* CubeMap_PK.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CubeMap_PK.c; sourceTree = "<group>"; };
 		DBE2581120635FBC00C34650 /* CubeMap_PK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeMap_PK.h; sourceTree = "<group>"; };
 		DBE258132063606700C34650 /* PictureProcessKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureProcessKit.h; sourceTree = "<group>"; };
+		DBF7DA9F20C8DF15008D2C08 /* CIColorMatrix_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CIColorMatrix_helper.h; sourceTree = "<group>"; };
+		DBF7DAA020C8DF15008D2C08 /* CIColorMatrix_helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIColorMatrix_helper.m; sourceTree = "<group>"; };
+		DBF7DAA220C8E586008D2C08 /* PictureFilterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureFilterController.h; sourceTree = "<group>"; };
+		DBF7DAA320C8E586008D2C08 /* PictureFilterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureFilterController.m; sourceTree = "<group>"; };
+		DBF7DAA420C8E586008D2C08 /* PictureFilterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureFilterController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +236,9 @@
 				DB57A72C20639D22000F02CE /* PictureCreateViewController.h */,
 				DB57A72D20639D22000F02CE /* PictureCreateViewController.m */,
 				DB57A72E20639D22000F02CE /* PictureCreateViewController.xib */,
+				DBF7DAA220C8E586008D2C08 /* PictureFilterController.h */,
+				DBF7DAA320C8E586008D2C08 /* PictureFilterController.m */,
+				DBF7DAA420C8E586008D2C08 /* PictureFilterController.xib */,
 				DB57A7312063B67D000F02CE /* PictureComposition.h */,
 				DB57A7322063B67D000F02CE /* PictureComposition.m */,
 				DB57A7332063B67D000F02CE /* PictureComposition.xib */,
@@ -272,6 +283,8 @@
 			children = (
 				DBE2581020635FBC00C34650 /* CubeMap_PK.c */,
 				DBE2581120635FBC00C34650 /* CubeMap_PK.h */,
+				DBF7DA9F20C8DF15008D2C08 /* CIColorMatrix_helper.h */,
+				DBF7DAA020C8DF15008D2C08 /* CIColorMatrix_helper.m */,
 			);
 			path = CoreImage;
 			sourceTree = "<group>";
@@ -506,6 +519,7 @@
 			files = (
 				DB6D0F3020626A3D007872B0 /* LaunchScreen.storyboard in Resources */,
 				DB74E92220735A590042CEDE /* squareMask.txt in Resources */,
+				DBF7DAA620C8E586008D2C08 /* PictureFilterController.xib in Resources */,
 				DB6D0F2D20626A3D007872B0 /* Assets.xcassets in Resources */,
 				DB57A7352063B67E000F02CE /* PictureComposition.xib in Resources */,
 				DB6D0F2B20626A3D007872B0 /* Main.storyboard in Resources */,
@@ -535,6 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF7DAA120C8DF15008D2C08 /* CIColorMatrix_helper.m in Sources */,
 				DB57A728206391FD000F02CE /* BaseTableViewCell.m in Sources */,
 				DB74E8FC207327D20042CEDE /* MJFoundation.m in Sources */,
 				DB74E905207327D20042CEDE /* MJPropertyType.m in Sources */,
@@ -556,6 +571,7 @@
 				DB6D0F2520626A3C007872B0 /* AppDelegate.m in Sources */,
 				DB6D0F7E20626E4B007872B0 /* CLBlurCircle_PPK.m in Sources */,
 				DB74E903207327D20042CEDE /* NSObject+MJProperty.m in Sources */,
+				DBF7DAA520C8E586008D2C08 /* PictureFilterController.m in Sources */,
 				DB74E902207327D20042CEDE /* MJExtensionConst.m in Sources */,
 				DB74E8DB20731EAF0042CEDE /* PPCompoundPath.m in Sources */,
 				DB6D0F7F20626E4B007872B0 /* CLSpotCircle_PPK.m in Sources */,
